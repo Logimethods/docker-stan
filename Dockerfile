@@ -10,5 +10,5 @@ COPY nats-streaming-server.conf /nats-streaming-server.conf
 EXPOSE 4222 8222 6222
 
 # Run via the configuration file
-#ENTRYPOINT ["/nats-streaming-server", "-c", "/nats-streaming-server.conf"]
+ENTRYPOINT ["/nats-streaming-server", "-c", "/nats-streaming-server.conf"]
 CMD []
